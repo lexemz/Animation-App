@@ -1,0 +1,6 @@
+framework module Pods_Spring_Animation_App {
+  umbrella header "Pods-Spring Animation App-umbrella.h"
+
+  export *
+  module * { export * }
+}
