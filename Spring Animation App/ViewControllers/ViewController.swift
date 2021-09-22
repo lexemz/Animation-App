@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     // MARK: - Private properties
 
-    private var animations = Animation.getAnimations()
+    private var animations = Animation.getAnimations().shuffled()
     private var animationCount = 0
     
     // MARK: - Life cycle methods
@@ -40,6 +40,7 @@ class ViewController: UIViewController {
     }
     
     // MARK: - Private methods
+
     private func animateView() {
         let currentAnimation = animations[animationCount]
         
