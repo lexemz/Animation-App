@@ -20,7 +20,7 @@
                                 <rect key="frame" x="87" y="104" width="240" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9K4-iw-D0o">
-                                        <rect key="frame" x="5" y="5" width="230" height="20.5"/>
+                                        <rect key="frame" x="5" y="5" width="230" height="118"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -30,6 +30,7 @@
                                 <constraints>
                                     <constraint firstItem="9K4-iw-D0o" firstAttribute="leading" secondItem="cKK-gB-DRi" secondAttribute="leading" constant="5" id="I4C-fb-d6M"/>
                                     <constraint firstItem="9K4-iw-D0o" firstAttribute="top" secondItem="cKK-gB-DRi" secondAttribute="top" constant="5" id="Tl6-jI-vIb"/>
+                                    <constraint firstAttribute="bottom" secondItem="9K4-iw-D0o" secondAttribute="bottom" constant="5" id="Ytp-FM-RDE"/>
                                     <constraint firstAttribute="trailing" secondItem="9K4-iw-D0o" secondAttribute="trailing" constant="5" id="fg7-rq-RgQ"/>
                                 </constraints>
                             </view>

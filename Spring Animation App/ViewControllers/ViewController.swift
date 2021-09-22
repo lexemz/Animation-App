@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet var animationInfoLabel: UILabel! {
         didSet {
             animationInfoLabel.textColor = .white
+            animationInfoLabel.adjustsFontSizeToFitWidth = true
+            animationInfoLabel.minimumScaleFactor = 0.5
         }
     }
 
