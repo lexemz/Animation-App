@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7873BC7726FB344600E3191E /* Animation Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7873BC7626FB344600E3191E /* Animation Model.swift */; };
 		78751BDC26FA7D46002C4B05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78751BDB26FA7D46002C4B05 /* AppDelegate.swift */; };
 		78751BDE26FA7D46002C4B05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78751BDD26FA7D46002C4B05 /* SceneDelegate.swift */; };
 		78751BE026FA7D46002C4B05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78751BDF26FA7D46002C4B05 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		4397BD8DD3D086F7EDA225FC /* Pods-Spring Animation App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spring Animation App.debug.xcconfig"; path = "Target Support Files/Pods-Spring Animation App/Pods-Spring Animation App.debug.xcconfig"; sourceTree = "<group>"; };
+		7873BC7626FB344600E3191E /* Animation Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation Model.swift"; sourceTree = "<group>"; };
 		78751BD826FA7D46002C4B05 /* Spring Animation App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spring Animation App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78751BDB26FA7D46002C4B05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78751BDD26FA7D46002C4B05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,8 +50,42 @@
 				4397BD8DD3D086F7EDA225FC /* Pods-Spring Animation App.debug.xcconfig */,
 				C9D6BD2E9CC1E3D3EFFFF08A /* Pods-Spring Animation App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7873BC7226FB340A00E3191E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				78751BDB26FA7D46002C4B05 /* AppDelegate.swift */,
+				78751BDD26FA7D46002C4B05 /* SceneDelegate.swift */,
+				78751BE926FA7D49002C4B05 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7873BC7326FB341300E3191E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				78751BE126FA7D46002C4B05 /* Main.storyboard */,
+				78751BE626FA7D49002C4B05 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7873BC7426FB341A00E3191E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				78751BDF26FA7D46002C4B05 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7873BC7526FB342300E3191E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7873BC7626FB344600E3191E /* Animation Model.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		78751BCF26FA7D46002C4B05 = {
@@ -73,13 +109,11 @@
 		78751BDA26FA7D46002C4B05 /* Spring Animation App */ = {
 			isa = PBXGroup;
 			children = (
-				78751BDB26FA7D46002C4B05 /* AppDelegate.swift */,
-				78751BDD26FA7D46002C4B05 /* SceneDelegate.swift */,
-				78751BDF26FA7D46002C4B05 /* ViewController.swift */,
-				78751BE126FA7D46002C4B05 /* Main.storyboard */,
+				7873BC7326FB341300E3191E /* Storyboards */,
+				7873BC7426FB341A00E3191E /* ViewControllers */,
+				7873BC7526FB342300E3191E /* Models */,
+				7873BC7226FB340A00E3191E /* App */,
 				78751BE426FA7D49002C4B05 /* Assets.xcassets */,
-				78751BE626FA7D49002C4B05 /* LaunchScreen.storyboard */,
-				78751BE926FA7D49002C4B05 /* Info.plist */,
 			);
 			path = "Spring Animation App";
 			sourceTree = "<group>";
@@ -208,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78751BE026FA7D46002C4B05 /* ViewController.swift in Sources */,
+				7873BC7726FB344600E3191E /* Animation Model.swift in Sources */,
 				78751BDC26FA7D46002C4B05 /* AppDelegate.swift in Sources */,
 				78751BDE26FA7D46002C4B05 /* SceneDelegate.swift in Sources */,
 			);
