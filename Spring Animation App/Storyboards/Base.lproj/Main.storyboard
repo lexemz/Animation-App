@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKK-gB-DRi">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKK-gB-DRi" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="87" y="104" width="240" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9K4-iw-D0o">
@@ -33,12 +33,15 @@
                                     <constraint firstAttribute="trailing" secondItem="9K4-iw-D0o" secondAttribute="trailing" constant="5" id="fg7-rq-RgQ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yB9-Cm-jAf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yB9-Cm-jAf" customClass="SpringButton" customModule="Spring">
                                 <rect key="frame" x="173.5" y="716" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button">
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="runAnimateButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKD-aP-GhC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -52,6 +55,11 @@
                             <constraint firstItem="yB9-Cm-jAf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xm0-Pv-Ccs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animatedView" destination="cKK-gB-DRi" id="43K-Jf-qRG"/>
+                        <outlet property="animationInfoLabel" destination="9K4-iw-D0o" id="tNh-Q9-2oz"/>
+                        <outlet property="runAnimateButton" destination="yB9-Cm-jAf" id="vLF-md-0Yv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
